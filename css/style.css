@@ -19,6 +19,11 @@ body {
   background-color: rgb(243, 230, 192);
 }
 
+/*------------FOOTER-------------*/
+footer img {
+  width: 100px;
+}
+
 /*-------Prop para el encabezado---------*/
 h1 figcaption {
   color: rgb(167, 132, 19);
@@ -39,10 +44,6 @@ header {
   position: sticky !important;
   top: 0px !important;
   z-index: 1 !important;
-}
-
-.navbar {
-  background-color: rgb(110, 50, 1) !important;
 }
 
 header figure {
@@ -67,37 +68,8 @@ header li a:hover, header li a:focus {
   color: black !important;
 }
 
-/*------------------Pag PRODUCTOS------------------*/
-.aProdc figure {
-  position: relative;
-  width: 400px;
-}
-
-.aProdc figure p {
-  position: absolute;
-  top: 1rem;
-  right: -0.2rem;
-  background-color: rgb(209, 144, 4);
-  color: white;
-  border: solid black 0.1rem;
-  padding: 0.2rem;
-}
-
-/*----------------Pag SOMOS-------------------*/
-.aSomos figure {
-  filter: blur(4px) grayscale(100%);
-  transition: 1s;
-}
-
-.aSomos figure:hover {
-  filter: blur(0px) grayscale(0%);
-  transition: 1s;
-}
-
-.aSomos img {
-  width: 100%;
-  height: 55vh;
-  object-fit: cover;
+.navbar {
+  background-color: rgb(110, 50, 1) !important;
 }
 
 /*---------------------Pag CONTACTO-----------------*/
@@ -135,9 +107,21 @@ header li a:hover, header li a:focus {
   border-right: none;
 }
 
-/*------------FOOTER-------------*/
-footer img {
-  width: 100px;
+/*----------------Pag SOMOS-------------------*/
+.aSomos figure {
+  filter: blur(4px) grayscale(100%);
+  transition: 1s;
+}
+
+.aSomos figure:hover {
+  filter: blur(0px) grayscale(0%);
+  transition: 1s;
+}
+
+.aSomos img {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
 }
 
 /*------------------SECCION PRINCIPAL-----------------*/
@@ -175,6 +159,21 @@ footer img {
   .secPrincipal article {
     grid-template-areas: "area1 area1 area2" "area3 area3 area3";
   }
+}
+/*------------------Pag PRODUCTOS------------------*/
+.aProdc figure {
+  position: relative;
+  width: 400px;
+}
+
+.aProdc figure p {
+  position: absolute;
+  top: 1rem;
+  right: -0.2rem;
+  background-color: rgb(209, 144, 4);
+  color: white;
+  border: solid black 0.1rem;
+  padding: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+/*------------------Pag PRODUCTOS------------------*/
+.aProdc figure {
+  position: relative;
+  width: 400px;
+}
+
+.aProdc figure p {
+  position: absolute;
+  top: 1rem;
+  right: -0.2rem;
+  background-color: rgb(209, 144, 4);
+  color: white;
+  border: solid black 0.1rem;
+  padding: 0.2rem;
+}
+
+/*# sourceMappingURL=productos.css.map */

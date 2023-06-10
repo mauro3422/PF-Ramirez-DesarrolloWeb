@@ -1,0 +1,16 @@
+  /*-----------Prop Menu-------------*/
+  header li, header li a{
+    background-color:rgb(167, 132, 19);  
+    border-radius: 0.4rem;
+    transition: ease 0.5s;
+  }
+  
+  header li a:hover, header li a:focus{
+    background-color: rgb(155, 101, 2);
+    color: black !important;
+  }
+  
+  .navbar{
+    background-color: rgb(110, 50, 1) !important;
+  }
+ 
