@@ -2,38 +2,43 @@
   
  .secPrincipal{
     border:solid 0.1rem black;
-  }
-  .secPrincipal article{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 2fr;
-    grid-template-areas: 
-    'area1 area1 area1'
-    'area2 area2 area2'
-    'area3 area3 area3';
-    gap: 1rem;
-    margin: 2rem;
-  }
-  .secPrincipal iframe{
-    width: 100%;
-    height:300px ;
-  
-  }
-  
-  .area1{
-    grid-area: area1;
-  }
-  .area2{
-    grid-area: area2;
-  }
-  .area3{
-    grid-area: area3;
-  }
-  
-  @media screen and (min-width: 950px) and (orientation: landscape) {
-    .secPrincipal article{
-      grid-template-areas: 
-    'area1 area1 area2'
-    'area3 area3 area3';
+
+    article{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        'area1 area1 area1'
+        'area2 area2 area2'
+        'area3 area3 area3';
+        gap: 1rem;
+        margin: 2rem;
+      }
+
+    iframe{
+        width: 100%;
+        height:300px ;
+      
     }
+    .area1{
+        grid-area: area1;
+      }
+      .area2{
+        grid-area: area2;
+      }
+      .area3{
+        grid-area: area3;
+      }
+      
+      @media screen and (min-width: 950px) and (orientation: landscape) {
+         article{
+        grid-template-areas: 
+        'area1 area1 area2'
+        'area3 area3 area3';
+        }
+      }
   }
+
+ 
+  
+  

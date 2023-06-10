@@ -1,9 +1,5 @@
  /*-------Prop para el encabezado---------*/
   
- h1 figcaption{
-    color: rgb(167, 132, 19);;
-    font-weight: bolder;
-  }
   h1{
     display: inline-block;
     font-size: 16px;
@@ -11,19 +7,26 @@
     margin-left:2rem;
     color: rgb(4, 122, 158);
     height: 18vh;
+
+    figcaption{
+        color: rgb(167, 132, 19);;
+        font-weight: bolder;
+      }
+
   }
   header{
     border-bottom: solid rgb(155, 103, 6) 0.15rem;
     position: sticky !important;
     top: 0px !important;
     z-index: 1 !important;
-  }
 
-  header figure{
-    width: 60px;
-    text-align: center;
-  }
-  header figure img{
-    width: 100%;
-    border-radius: 0.5rem;
+    figure{
+        width: 60px;
+        text-align: center;
+      }
+
+      figure img{
+        width: 100%;
+        border-radius: 0.5rem;
+      }
   }

@@ -1,23 +1,25 @@
  /*-----------------Pag GALERIA---------------------*/
- .aGal table td img{
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    width: 90%;
-    object-fit: cover;
-  }
-  .aGal table{
+ .aGal table{
     border:solid black 0.1rem;
     border-collapse: collapse;
     width: 80%;
     margin: 0 auto;
-  }
-  
-  .aGal table tr{
-    width: 100%;
-  }
-  .aGal table td{
-    width: 30%;
-    border:solid black 0.1rem;
-    border-left: none;
-    border-right: none;
+
+    td{
+        width: 30%;
+        border:solid black 0.1rem;
+        border-left: none;
+        border-right: none;
+        img{
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            width: 90%;
+            object-fit: cover;
+        }
+    }
+     
+    tr{
+        width: 100%;
+      }
+
   }
