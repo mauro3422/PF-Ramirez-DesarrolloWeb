@@ -1,0 +1,176 @@
+/*Fuente*/
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/Roboto-Regular.ttf");
+  }
+  /*-------------prop globales------------*/
+  *{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing:border-box;
+    font-family: "Roboto" !important;
+    line-height: 1.5rem;
+  }
+  
+  body{
+    background-color: rgb(243, 230, 192);
+  }
+  /*-------Prop para el encabezado---------*/
+  
+  h1 figcaption{
+    color: rgb(167, 132, 19);;
+    font-weight: bolder;
+  }
+  h1{
+    display: inline-block;
+    font-size: 16px;
+    width: 27%;
+    margin-left:2rem;
+    color: rgb(4, 122, 158);
+    height: 18vh;
+  }
+  header{
+    border-bottom: solid rgb(155, 103, 6) 0.15rem;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 1 !important;
+  }
+  .navbar{
+    background-color: rgb(110, 50, 1) !important;
+  }
+  header figure{
+    width: 60px;
+    text-align: center;
+  }
+  header figure img{
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  /*-----------Prop Menu-------------*/
+  header li, header li a{
+    background-color:rgb(167, 132, 19);  
+    border-radius: 0.4rem;
+    transition: ease 0.5s;
+  }
+  
+  header li a:hover, header li a:focus{
+    background-color: rgb(155, 101, 2);
+    color: black !important;
+  }
+  
+  /*------------------Pag PRODUCTOS------------------*/
+  .aProdc figure{
+    position: relative;
+    width: 400px;
+  }
+  .aProdc figure p{
+    position: absolute;
+    top:1rem;
+    right: -0.2rem;
+    background-color: rgb(209, 144, 4);
+    color: white;
+    border: solid black 0.1rem;
+    padding: 0.2rem;
+  }
+  
+  /*----------------Pag SOMOS-------------------*/
+  
+  
+  .aSomos figure{
+    filter: blur(4px) grayscale(100%);
+   
+    transition: 1s;
+  }
+  .aSomos figure:hover{
+    filter: blur(0px) grayscale(0%);
+    transition: 1s;
+  }
+  .aSomos img{
+    width:100%;
+    height:55vh;
+    object-fit: cover;
+  }
+  
+  
+  /*---------------------Pag CONTACTO-----------------*/
+  .formContacto fieldset{
+  
+    background-color: rgb(226, 215, 181);
+  }
+  
+  .formContacto .botones input{
+    
+    background-color: burlywood;
+  }
+  
+  /*-----------------Pag GALERIA---------------------*/
+  .aGal table td img{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    width: 90%;
+    object-fit: cover;
+  }
+  .aGal table{
+    border:solid black 0.1rem;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .aGal table tr{
+    width: 100%;
+  }
+  .aGal table td{
+    width: 30%;
+    border:solid black 0.1rem;
+    border-left: none;
+    border-right: none;
+  }
+  /*------------FOOTER-------------*/
+  footer img{
+    width: 100px;
+  }
+  
+  
+  /*------------------SECCION PRINCIPAL-----------------*/
+  
+  .secPrincipal{
+    border:solid 0.1rem black;
+  }
+  .secPrincipal article{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    'area1 area1 area1'
+    'area2 area2 area2'
+    'area3 area3 area3';
+    gap: 1rem;
+    margin: 2rem;
+  }
+  .secPrincipal iframe{
+    width: 100%;
+    height:300px ;
+  
+  }
+  
+  .area1{
+    grid-area: area1;
+  }
+  .area2{
+    grid-area: area2;
+  }
+  .area3{
+    grid-area: area3;
+  }
+  
+  @media screen and (min-width: 950px) and (orientation: landscape) {
+    .secPrincipal article{
+      grid-template-areas: 
+    'area1 area1 area2'
+    'area3 area3 area3';
+    }
+  }
