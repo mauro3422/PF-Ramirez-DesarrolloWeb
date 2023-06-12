@@ -1,22 +1,17 @@
-/*Fuente*/
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/Roboto-Regular.ttf");
-}
-/*-------------prop globales------------*/
-* {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Roboto" !important;
-  line-height: 1.5rem;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 19 |     background-color: $body-color;
+ *    |                       ^^^^^^^^^^^
+ *    '
+ *   scss\base\resets.scss 19:23  root stylesheet */
 
-body {
-  background-color: rgb(243, 230, 192);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 19 \2502      background-color: $body-color;\d\a    \2502                        ^^^^^^^^^^^\a    \2575 \a   scss\\base\\resets.scss 19:23  root stylesheet";
 }
-
-/*# sourceMappingURL=resets.css.map */

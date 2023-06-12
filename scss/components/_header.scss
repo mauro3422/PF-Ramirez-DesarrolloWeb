@@ -1,25 +1,26 @@
  /*-------Prop para el encabezado---------*/
-  
-  h1{
-    display: inline-block;
-    font-size: 16px;
-    width: 27%;
-    margin-left:2rem;
-    color: rgb(4, 122, 158);
-    height: 18vh;
 
-    figcaption{
-        color: rgb(167, 132, 19);;
-        font-weight: bolder;
-      }
-
-  }
   header{
     border-bottom: solid rgb(155, 103, 6) 0.15rem;
     position: sticky !important;
     top: 0px !important;
     z-index: 1 !important;
 
+      
+    h1{
+      display: inline-block;
+      font-size: 16px;
+      width: 27%;
+      margin-left:2rem;
+      color: rgb(4, 122, 158);
+      height: 18vh;
+
+      figcaption{
+          color: rgb(167, 132, 19);;
+          font-weight: bolder;
+        }
+
+    }
     figure{
         width: 60px;
         text-align: center;

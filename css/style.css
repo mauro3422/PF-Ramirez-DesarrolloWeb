@@ -25,12 +25,13 @@ footer img {
 }
 
 /*-------Prop para el encabezado---------*/
-h1 figcaption {
-  color: rgb(167, 132, 19);
-  font-weight: bolder;
+header {
+  border-bottom: solid rgb(155, 103, 6) 0.15rem;
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 1 !important;
 }
-
-h1 {
+header h1 {
   display: inline-block;
   font-size: 16px;
   width: 27%;
@@ -38,73 +39,62 @@ h1 {
   color: rgb(4, 122, 158);
   height: 18vh;
 }
-
-header {
-  border-bottom: solid rgb(155, 103, 6) 0.15rem;
-  position: sticky !important;
-  top: 0px !important;
-  z-index: 1 !important;
+header h1 figcaption {
+  color: rgb(167, 132, 19);
+  font-weight: bolder;
 }
-
 header figure {
   width: 60px;
   text-align: center;
 }
-
 header figure img {
   width: 100%;
   border-radius: 0.5rem;
 }
 
 /*-----------Prop Menu-------------*/
-header li, header li a {
+header .navbar {
+  background-color: rgb(110, 50, 1) !important;
+}
+header li, header a {
   background-color: rgb(167, 132, 19);
   border-radius: 0.4rem;
   transition: ease 0.5s;
 }
-
-header li a:hover, header li a:focus {
+header li:hover, header li:focus, header a:hover, header a:focus {
   background-color: rgb(155, 101, 2);
   color: black !important;
-}
-
-.navbar {
-  background-color: rgb(110, 50, 1) !important;
 }
 
 /*---------------------Pag CONTACTO-----------------*/
 .formContacto fieldset {
   background-color: rgb(226, 215, 181);
 }
-
 .formContacto .botones input {
   background-color: burlywood;
 }
 
 /*-----------------Pag GALERIA---------------------*/
-.aGal table td img {
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  width: 90%;
-  object-fit: cover;
-}
-
 .aGal table {
   border: solid black 0.1rem;
   border-collapse: collapse;
   width: 80%;
   margin: 0 auto;
 }
-
-.aGal table tr {
-  width: 100%;
-}
-
 .aGal table td {
   width: 30%;
   border: solid black 0.1rem;
   border-left: none;
   border-right: none;
+}
+.aGal table td img {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 90%;
+  object-fit: cover;
+}
+.aGal table tr {
+  width: 100%;
 }
 
 /*----------------Pag SOMOS-------------------*/
@@ -112,12 +102,10 @@ header li a:hover, header li a:focus {
   filter: blur(4px) grayscale(100%);
   transition: 1s;
 }
-
 .aSomos figure:hover {
   filter: blur(0px) grayscale(0%);
   transition: 1s;
 }
-
 .aSomos img {
   width: 100%;
   height: 55vh;
@@ -128,44 +116,37 @@ header li a:hover, header li a:focus {
 .secPrincipal {
   border: solid 0.1rem black;
 }
-
 .secPrincipal article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr;
   grid-template-areas: "area1 area1 area1" "area2 area2 area2" "area3 area3 area3";
-  gap: 1rem;
   margin: 2rem;
 }
-
 .secPrincipal iframe {
   width: 100%;
   height: 300px;
 }
-
-.area1 {
+.secPrincipal .area1 {
   grid-area: area1;
 }
-
-.area2 {
+.secPrincipal .area2 {
   grid-area: area2;
 }
-
-.area3 {
+.secPrincipal .area3 {
   grid-area: area3;
 }
-
 @media screen and (min-width: 950px) and (orientation: landscape) {
   .secPrincipal article {
     grid-template-areas: "area1 area1 area2" "area3 area3 area3";
   }
 }
+
 /*------------------Pag PRODUCTOS------------------*/
 .aProdc figure {
   position: relative;
   width: 400px;
 }
-
 .aProdc figure p {
   position: absolute;
   top: 1rem;

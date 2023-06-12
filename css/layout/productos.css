@@ -1,17 +1,17 @@
-/*------------------Pag PRODUCTOS------------------*/
-.aProdc figure {
-  position: relative;
-  width: 400px;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 3 |     @if $ult-prodc==1{
+ *   |         ^^^^^^^^^^
+ *   '
+ *   scss\layout\productos.scss 3:9  root stylesheet */
 
-.aProdc figure p {
-  position: absolute;
-  top: 1rem;
-  right: -0.2rem;
-  background-color: rgb(209, 144, 4);
-  color: white;
-  border: solid black 0.1rem;
-  padding: 0.2rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      @if $ult-prodc==1{\d\a   \2502          ^^^^^^^^^^\a   \2575 \a   scss\\layout\\productos.scss 3:9  root stylesheet";
 }
-
-/*# sourceMappingURL=productos.css.map */

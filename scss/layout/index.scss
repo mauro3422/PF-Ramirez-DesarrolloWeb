@@ -4,14 +4,13 @@
     border:solid 0.1rem black;
 
     article{
-        display: grid;
+        @include d(grid,1rem);
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 2fr;
         grid-template-areas: 
         'area1 area1 area1'
         'area2 area2 area2'
         'area3 area3 area3';
-        gap: 1rem;
         margin: 2rem;
       }
 

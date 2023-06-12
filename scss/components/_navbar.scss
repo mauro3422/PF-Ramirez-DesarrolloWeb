@@ -1,14 +1,14 @@
   /*-----------Prop Menu-------------*/
   header{ 
     .navbar{
-        background-color: rgb(110, 50, 1) !important;
+        background-color: $navbar-color !important;
       }
     li,a{
-        background-color:rgb(167, 132, 19);  
+        background-color:$navbar-color-boton;  
         border-radius: 0.4rem;
         transition: ease 0.5s;
     &:hover,&:focus{
-        background-color: rgb(155, 101, 2);
+        background-color:$navbar-color-boton-a;
         color: black !important;
     }
   }
