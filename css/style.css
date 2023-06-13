@@ -118,6 +118,7 @@ header li:hover, header li:focus, header a:hover, header a:focus {
 }
 .secPrincipal article {
   display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr;
   grid-template-areas: "area1 area1 area1" "area2 area2 area2" "area3 area3 area3";

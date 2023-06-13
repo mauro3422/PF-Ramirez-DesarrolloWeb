@@ -1,7 +1,7 @@
 //Import base.
-@import 'base/variables';
-@import 'base/utilidades';
-@import 'base/resets';
+@import 'base/_variables';
+@import 'base/_utilidades';
+@import 'base/_resets';
 
 //import componentes;
 @import 'components/_footer';
@@ -10,11 +10,11 @@
 
 
 //import layout
-@import 'layout/contacto';
-@import 'layout/galeria';
-@import 'layout/somos';
-@import 'layout/index';
-@import 'layout/productos';
+@import 'layout/_contacto';
+@import 'layout/_galeria';
+@import 'layout/_somos';
+@import 'layout/_index';
+@import 'layout/_productos';
 
  
 
